@@ -3105,6 +3105,67 @@
 		},
 		{
 			"categories": [
+				"Security",
+				"Tools"
+			],
+			"description": "Hoppscotch is a powerful open-source API development tool with a lightweight interface. It supports different HTTP methods, lets you customize themes, and includes features like WebSocket and GraphQL.",
+			"env": [
+				{
+					"default": "hoppscotch_user",
+					"label": "POSTGRES_USER",
+					"name": "POSTGRES_USER"
+				},
+				{
+					"default": "hoppscotch_password",
+					"label": "POSTGRES_PASSWORD",
+					"name": "POSTGRES_PASSWORD"
+				},
+				{
+					"default": "hoppscotch_db",
+					"label": "POSTGRES_DB",
+					"name": "POSTGRES_DB"
+				},
+				{
+					"default": "1000",
+					"label": "USER_UID",
+					"name": "USER_UID"
+				},
+				{
+					"default": "1000",
+					"label": "USER_GID",
+					"name": "USER_GID"
+				},
+				{
+					"default": "3000",
+					"label": "WEB_PORT",
+					"name": "WEB_PORT"
+				},
+				{
+					"default": "5435",
+					"label": "DB_PORT",
+					"name": "DB_PORT"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				}
+
+			],
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/hoppscotch.png",
+			"name": "hoppscotch",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "stack/hoppscotch.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted/"
+			},
+			"restart_policy": "always",
+			"title": "Hoppscotch",
+			"type": 3,
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hoppscotch.io/\" target=\"_blank\">https://hoppscotch.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.hoppscotch.io/documentation/self-host/install-and-build#building-the-docker-image" target=\"_blank\">https://docs.hoppscotch.io/documentation/self-host/install-and-build#building-the-docker-image</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Video",
 				"Music",
 				"Other"

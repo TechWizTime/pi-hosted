@@ -1,0 +1,62 @@
+{
+	"categories": [
+		"Security",
+		"Tools"
+	],
+	"description": "Hoppscotch is a powerful open-source API development tool with a lightweight interface. It supports different HTTP methods, lets you customize themes, and includes features like WebSocket and GraphQL.",
+	"env": [
+		{
+			"default": "hoppscotch_user",
+			"label": "POSTGRES_USER",
+			"name": "POSTGRES_USER"
+		},
+		{
+			"default": "hoppscotch_password",
+			"label": "POSTGRES_PASSWORD",
+			"name": "POSTGRES_PASSWORD"
+		},
+		{
+			"default": "hoppscotch_db",
+			"label": "POSTGRES_DB",
+			"name": "POSTGRES_DB"
+		},
+		{
+			"default": "1000",
+			"label": "USER_UID",
+			"name": "USER_UID"
+		},
+		{
+			"default": "1000",
+			"label": "USER_GID",
+			"name": "USER_GID"
+		},
+		{
+			"default": "3000",
+			"label": "WEB_PORT",
+			"name": "WEB_PORT"
+		},
+		{
+			"default": "5435",
+			"label": "DB_PORT",
+			"name": "DB_PORT"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		}
+	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/hoppscotch.png",
+	"name": "hoppscotch",
+	"officialDoc": "https://docs.hoppscotch.io/",
+	"platform": "linux",
+	"repository": {
+		"stackfile_arm64": "stack/hoppscotch.yml",
+		"stackfile_amd64": "stack/hoppscotch.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted/"
+	},
+	"restart_policy": "always",
+	"title": "Hoppscotch",
+	"type": 3,
+	"webpage": "https://hoppscotch.io/"
+}

@@ -1,0 +1,35 @@
+version: '3.7'
+services:
+  hoppscotch:
+    container_name: hoppscotch
+    image: hoppscotch/hoppscotch:latest
+    ports:
+      - 3050:3000
+      - "${WEB_PORT}:3000"
+    networks:
+      - hoppscotch
+    depends_on:
+      - db
+
+  db:
+    image: postgres:latest
+    ports:
+      - 5435:5435
+      - "${DB_PORT}:5435"
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      PUID: 1000
+      ${USER_UID}
+      PGID: 1000
+      ${USER_GID}
+      TZ: ${TZ}
+    networks:
+      - hoppscotch
+    restart: always
+    volumes:
+      - /portainer/Files/AppData/Config/hoppscotch/db:/var/lib/postgresql/data
+
+networks:
+  hoppscotch:
